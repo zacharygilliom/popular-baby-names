@@ -33,7 +33,9 @@ for df in [i for i in df.groupby("Child's First Name") if i[1]['Count'].mean() >
 	plt.scatter(x=df[1]['Year of Birth'], y=df[1]['Count'], label=df[0])
 	plt.legend(loc=1)
 
-
+plt.title('Occurences of baby names by birth year that are averaging greater than 175')
+plt.xlabel('Year of Birth')
+plt.ylabel('Occurences of name in each year')
 
 plt.show()
 
